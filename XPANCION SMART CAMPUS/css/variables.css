@@ -1,0 +1,179 @@
+/* ==========================================================================
+   SmartCampus Design Tokens & Variables — Light & Dark Theme System
+   ========================================================================== */
+
+:root {
+  /* Core Clean White / Light Palette */
+  --bg-main: #f8fafc;           /* Crisp light slate background */
+  --bg-card: #ffffff;           /* Pure white card backgrounds */
+  --bg-card-hover: #f1f5f9;     /* Subtle light gray on hover */
+  --bg-card-solid: #ffffff;
+  --bg-secondary: #f1f5f9;      /* Light surface background */
+  --bg-elevated: #ffffff;
+  --bg-surface: #f1f5f9;
+  --bg-glass: rgba(255, 255, 255, 0.85);
+  --bg-glass-strong: rgba(255, 255, 255, 0.96);
+
+  /* Borders & Dividers */
+  --border-subtle: #e2e8f0;      /* Slate-200 */
+  --border-card: #cbd5e1;        /* Slate-300 */
+  --border-focus: #2563eb;       /* Royal Blue */
+  --border-glow: rgba(37, 99, 235, 0.25);
+
+  /* Primary Palette: Standard Royal & Navy Blue */
+  --primary: #2563eb;            /* Royal Blue */
+  --primary-light: #3b82f6;      /* Bright Blue */
+  --primary-dark: #1d4ed8;       /* Deep Navy Blue */
+  --primary-glow: rgba(37, 99, 235, 0.18);
+
+  /* Navigation active states */
+  --nav-active-bg: #eff6ff;
+  --nav-active-text: #1d4ed8;
+  --nav-active-border: #bfdbfe;
+  --nav-hover-bg: #f1f5f9;
+
+  /* Accent Palettes */
+  --accent-blue: #0284c7;        /* Sky / Sapphire Blue */
+  --accent-blue-light: #e0f2fe;  /* Ice Blue */
+  --accent-peach: #2563eb;       /* Synced to Primary Blue */
+  --accent-peach-light: #dbeafe;
+  --accent-peach-dark: #1e40af;
+  --accent-peach-glow: rgba(37, 99, 235, 0.15);
+
+  --accent-cyan: #0284c7;
+  --accent-cyan-glow: rgba(2, 132, 199, 0.15);
+  --accent-purple: #6366f1;
+
+  /* Status Colors (Optimized for Light Backgrounds) */
+  --status-available: #059669;    /* Crisp Emerald Green */
+  --status-available-bg: #ecfdf5; /* Light green tint */
+  --status-available-glow: rgba(5, 150, 105, 0.2);
+
+  --status-pending: #d97706;      /* Amber / Orange */
+  --status-pending-bg: #fffbeb;
+  --status-pending-glow: rgba(217, 119, 6, 0.2);
+
+  --status-occupied: #dc2626;     /* Crimson Red */
+  --status-occupied-bg: #fef2f2;
+  --status-occupied-glow: rgba(220, 38, 38, 0.2);
+
+  --status-sos: #e11d48;          /* High Alert Rose Red */
+  --status-sos-glow: rgba(225, 29, 72, 0.35);
+
+  --status-info: #0284c7;         /* Info Sky Blue */
+  --status-info-bg: #f0f9ff;
+
+  /* Typography */
+  --font-heading: 'Plus Jakarta Sans', system-ui, -apple-system, sans-serif;
+  --font-body: 'Inter', system-ui, -apple-system, sans-serif;
+  --font-mono: 'JetBrains Mono', 'Fira Code', monospace;
+
+  /* High Contrast Slate Text Colors */
+  --text-primary: #0f172a;       /* Deep Slate 900 for sharp readability */
+  --text-secondary: #334155;     /* Slate 700 */
+  --text-muted: #64748b;         /* Slate 500 */
+  --text-inverse: #ffffff;
+
+  /* Shadows for Crisp Light Theme */
+  --shadow-sm: 0 1px 2px rgba(15, 23, 42, 0.05);
+  --shadow-md: 0 4px 6px -1px rgba(15, 23, 42, 0.08), 0 2px 4px -2px rgba(15, 23, 42, 0.06);
+  --shadow-lg: 0 10px 15px -3px rgba(15, 23, 42, 0.1), 0 4px 6px -4px rgba(15, 23, 42, 0.05);
+  --shadow-glow: 0 4px 20px rgba(37, 99, 235, 0.25);
+  --shadow-glow-peach: 0 4px 20px rgba(37, 99, 235, 0.2);
+  --shadow-glow-sos: 0 4px 20px rgba(225, 29, 72, 0.35);
+
+  --backdrop-blur: blur(12px);
+  --backdrop-blur-sm: blur(6px);
+
+  /* Sizing & Transitions */
+  --sidebar-width: 270px;
+  --header-height: 72px;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-xl: 20px;
+  --radius-full: 9999px;
+
+  --transition-fast: 0.15s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-normal: 0.25s cubic-bezier(0.4, 0, 0.2, 1);
+  --transition-smooth: 0.35s cubic-bezier(0.16, 1, 0.3, 1);
+}
+
+/* ==========================================================================
+   Dark Theme Design Tokens — Midnight Obsidian & Cyber Neon Accents
+   ========================================================================== */
+[data-theme="dark"], body.dark-theme {
+  /* Core Deep Midnight Palette */
+  --bg-main: #0a0e1a;            /* Deep Obsidian Midnight Canvas */
+  --bg-card: #111827;            /* Dark Slate 900 Cards */
+  --bg-card-hover: #1e293b;      /* Slate 800 hover */
+  --bg-card-solid: #111827;
+  --bg-secondary: #0f172a;       /* Deep Slate Surface */
+  --bg-elevated: #1e293b;
+  --bg-surface: #1e293b;         /* Elevated Surface */
+  --bg-glass: rgba(17, 24, 39, 0.82);
+  --bg-glass-strong: rgba(17, 24, 39, 0.94);
+
+  /* Borders & Dividers in Dark Mode */
+  --border-subtle: #1e293b;       /* Dark Subtle Border */
+  --border-card: #283548;         /* Card Border */
+  --border-focus: #38bdf8;        /* Sky Blue Focus Glow */
+  --border-glow: rgba(56, 189, 248, 0.3);
+
+  /* Primary Palette: Electric Sapphire & Blue */
+  --primary: #3b82f6;            /* Vibrant Electric Blue */
+  --primary-light: #60a5fa;      /* Ice Blue */
+  --primary-dark: #2563eb;       /* Royal Blue */
+  --primary-glow: rgba(59, 130, 246, 0.35);
+
+  /* Navigation active states */
+  --nav-active-bg: rgba(59, 130, 246, 0.16);
+  --nav-active-text: #60a5fa;
+  --nav-active-border: rgba(96, 165, 250, 0.35);
+  --nav-hover-bg: #1e293b;
+
+  /* Accent Palettes in Dark Mode */
+  --accent-blue: #38bdf8;        /* Neon Sky Cyan */
+  --accent-blue-light: #0c4a6e;
+  --accent-peach: #38bdf8;
+  --accent-peach-light: rgba(56, 189, 248, 0.15);
+  --accent-peach-dark: #0284c7;
+  --accent-peach-glow: rgba(56, 189, 248, 0.2);
+
+  --accent-cyan: #38bdf8;
+  --accent-cyan-glow: rgba(56, 189, 248, 0.25);
+  --accent-purple: #a5b4fc;
+
+  /* Status Colors in Dark Mode (Vibrant & High Visibility) */
+  --status-available: #34d399;    /* Neon Emerald */
+  --status-available-bg: rgba(16, 185, 129, 0.16);
+  --status-available-glow: rgba(52, 211, 153, 0.3);
+
+  --status-pending: #fbbf24;      /* Luminous Amber */
+  --status-pending-bg: rgba(245, 158, 11, 0.16);
+  --status-pending-glow: rgba(251, 191, 36, 0.3);
+
+  --status-occupied: #f87171;     /* Vivid Coral Red */
+  --status-occupied-bg: rgba(239, 68, 68, 0.16);
+  --status-occupied-glow: rgba(248, 113, 113, 0.3);
+
+  --status-sos: #fb7185;          /* High Alert Rose */
+  --status-sos-glow: rgba(244, 63, 94, 0.45);
+
+  --status-info: #38bdf8;
+  --status-info-bg: rgba(56, 189, 248, 0.16);
+
+  /* Crisp Typography for Dark Mode */
+  --text-primary: #f8fafc;       /* Crisp White text */
+  --text-secondary: #cbd5e1;     /* Silvery Slate */
+  --text-muted: #94a3b8;         /* Soft Muted Slate */
+  --text-inverse: #0f172a;
+
+  /* Shadows for Rich Dark Canvas */
+  --shadow-sm: 0 1px 3px rgba(0, 0, 0, 0.4);
+  --shadow-md: 0 4px 8px -1px rgba(0, 0, 0, 0.5), 0 2px 4px -2px rgba(0, 0, 0, 0.3);
+  --shadow-lg: 0 12px 28px -4px rgba(0, 0, 0, 0.6), 0 6px 10px -4px rgba(0, 0, 0, 0.4);
+  --shadow-glow: 0 4px 25px rgba(59, 130, 246, 0.35);
+  --shadow-glow-peach: 0 4px 25px rgba(56, 189, 248, 0.25);
+  --shadow-glow-sos: 0 4px 25px rgba(244, 63, 94, 0.55);
+}
